@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>The Federation Database</title>
+        <meta charset="UTF-8">
+        <meta name="star trek" content="everything about star trek universe">
+        <!-- Carousell from Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style>
+            body {
+              padding: 40px;
+              background-color:#253381;
+            }
+            div {
+                text-align:center;
+                color:#747fbf;
+                margin-top: 20px;
+            }
+            .box
+            {
+              font-size:25px;
+              color:white;
+            }
+            #bottom {
+              border-top: 1px solid;
+              border-color: #747fbf;
+              border-collapse: collapse;
+              width: 100%;
+              margin-top: 50px;
+            }
+        </style>
+    </head>
+
+    <body style='width: 70%; margin-left: auto;margin-right: auto;'>
+
+        <h1 style='color:white; display: inline-block;'>The Federation Database
+          <a href="index.html"><img src="images/flag_fed.png" alt="Official Insignia" style='height:15%; width:15%;float:right; margin-bottom:30px;'></a>
+        </h1>
+
+        <table style='background-color: #253381; border: solid 1px white; margin-left: auto; margin-right: auto;'>
+            <tr>
+                <th style='padding: 50px'>
+                    <p class='box' >Site under construction</p>
+                    <p style='color:#7fb3d5; font-weight:normal;'>Comming soon!</p>
+                </th>
+                <th style='padding: 50px; text-align:left;'>
+                    <img src=images/construction/construction.png alt='crane' style='height: 40%; width: 40%;'>
+                </th>
+                <th style='padding: 50px; text-align:center; '>
+                    <p class='box'><b>Please Visit our renewed Starfleet Section!</b></p>
+                    <a href="starfleet.html"><img src=images/starfleet_logo.png alt='starfleet_logo' style='height: 30%; width: 30%;'></a>
+                </th>
+            </tr>
+        </table>
+
+        <h2 style='color:white; margin-top: 30px;'>Did you know that... ?</h2>
+        <p style='color:#747fbf'>Facts about the United Federation of Planets</p>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style='margin: 0%;'>
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+              <img class="d-block w-100" src='images/construction/wolf_359.jpg' alt="The Borg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>The Borg</h5>
+                  <p>The Federation's most deadly enemy</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src='images/construction/ds9.jpg'  alt="DS9">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Deep Space Nine</h5>
+                  <p>The furthest station of the Federation</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src='images/construction/uss_voyager.jpg' alt="USS Voyager">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>USS Voyager</h5>
+                  <p>The most travelled vessel of our fleet</p>
+                </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <table id="bottom">
+            <tr>
+                <td style="text-align:left; padding: 10px;font-size:small; color:#747fbf">
+                    The Federation Earthling Group <br>
+                    Legal | Access to Information | Jobs | Contact <br>
+                    © 2020 The Federation Earthling Group, All Rights Reserved.
+                </td>
+                <td><img src="images/design_logo.png" alt="The Federation Earthling Group" style='float:right; margin-right:30px; height: 8%; width: 8%;'></td>
+            </tr>
+        </table>
+    </body>
+</html>

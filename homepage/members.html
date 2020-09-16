@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href='styles_nav_bars.css' rel="stylesheet">
+        <title>The Federation Database</title>
+        <style>
+            body {
+              padding: 40px;
+              background-color:#253381;
+            }
+            .center_left {
+                margin-left:70px;
+                margin-bottom:30px;
+                width: 45%;
+                float:left;
+            }
+            .center_right {
+                width: 45%;
+                margin-bottom:30px;
+                margin-right:70px;
+                float:right;
+            }
+            #vulcan, #andoria, #earth, #tellar
+            {
+                display: none;
+                color:#253381;
+                font-weight: normal;
+                text-align: justify;
+                text-justify: inter-word;
+                padding: 20px;
+                background-color: white;
+                white-space: pre-line;
+            }
+            .center_cell {
+                text-align:center;
+                vertical-align: text-top;
+                padding: 30px;
+            }
+            #charter
+            {
+                white-space: pre-line;
+                font-weight: normal;
+                color:white;
+                font-style: italic;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style='color:white'>The Federation Database<a href="index.html"><img src="images/flag_fed.png" alt="Official Insignia" style='height:15%; width:15%;float:right; margin-bottom:30px;'></a></h1>
+        <h2 style='color:#747fbf;'>The Starfleet</h2>
+        <table class="nav_bar">
+            <tr>
+                <th class='nav_cel'><a class="bar_links" href="index.html">Home</a></th>
+                <th class='nav_cel' onmouseover="show_mem(); return false;" onmouseout="hide_mem(); return false;">
+                    <a class="bar_links" href="members.html">Members</a>
+                </th>
+                <th class='nav_cel' onmouseover="show_star(); return false;" onmouseout="hide_star(); return false;">
+                    <a class="bar_links" id="starfleet" href="starfleet.html">Starfleet</a>
+                </th>
+                <th class='nav_cel'><a class="bar_links" href="under_construction.html">Reference</a></th>
+                <th class='nav_cel'><a class="bar_links" href="under_construction.html">Appendix</a></th>
+                <th class='nav_cel'><a class="bar_links" href="under_construction.html">About</a></th>
+                <th class='nav_cel'><a class="bar_links" href="under_construction.html">FAQ</a></th>
+                <th class='nav_cel'><a class="bar_links" href="under_construction.html">Contact</a></th>
+            </tr>
+        </table>
+        <table class='nav_subbar' id='nav_subbar_star' onmouseover="show_star(); return false;" onmouseout="hide_star(); return false;">
+            <tr>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Fleets</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Ranks</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Starships</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Staff</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Careers</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Headquartes</a></th>
+            </tr>
+        </table>
+        <table class='nav_subbar' id='nav_subbar_mem' onmouseover="show_mem(); return false;" onmouseout="hide_mem(); return false;">
+            <tr>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Species</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Planets</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Sectors</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Intergalactic Guilds</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Treaties</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Cuadrants Relations</a></th>
+            </tr>
+        </table>
+
+        <h2 style='color:white; margin-top: 30px;margin-left: 50px;'>Federation Membership</h2>
+        <p style='color:#747fbf;padding-bottom: 30px;margin-left: 50px;margin-right: 50px;border-bottom: 1px solid #747fbf;'>In 2373, the United Federation of Planets consisted of at least one hundred and fifty member planets, spread over eight thousand light years. </p>
+
+        <div class='center_left'>
+            <div class='center_cell' style='text-align:left; vertical-align: text-top;'>
+                <h3 style="color:white; text-align:left;">Founding Members</h3>
+                <p style='color:#747fbf;font-weight:normal; text-align:left;'>Please get acquainted with our first members</p>
+
+                <select id='planets'>
+                    <option value="Andoria">Andoria</option>
+                    <option value="Earth" >Earth</option>
+                    <option value="Tellar">Tellar Prime</option>
+                    <option value="Vulcan">Vulcan</option>
+                </select>
+            </div>
+            <div class='center_cell'>
+                <pre id="vulcan">
+                    <img src="images/members/vulcan.jpg" alt='vulcan' style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    Vulcan was an inhabited M-class planet in the Vulcan system, a system located in Sector 001 of the Alpha Quadrant. It had no moons, but appeared to have close planetary companions. It was the homeworld of the Vulcans, a warp-capable humanoid species. (TOS: "The Man Trap", "Amok Time"; TAS: "Yesteryear"; Star Trek: The Motion Picture; VOY: "In the Flesh"; ENT: "Strange New World"; DIS: "Magic to Make the Sanest Man Go Mad"). Vulcan was a founding member of both the Coalition of Planets in 2155 and the United Federation of Planets in 2161. (ENT: "Zero Hour", "Demons", "Terra Prime", "These Are the Voyages...") During the Dominion War of the late 24th century, Vulcan's strategic importance was on par with worlds like Andor, Berengaria VII, and Earth.
+                </pre>
+                <pre id="andoria">
+                    <img src="images/members/andoria.jpg" alt='andoria' style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    Andoria or Andor was an inhabited moon orbiting a ringed gas giant of the Andorian system. Andoria was the homeworld of the Andorian and the Aenar races, and was a key world to the United Federation of Planets. During the Dominion War, Andoria's strategic importance was on par with worlds like Earth, Berengaria VII, and Vulcan. (DS9: "In the Cards")
+                </pre>
+                <pre id="earth">
+                    <img src="images/members/earth.jpg" alt='earth' style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    Earth, also known as Sol III, Terra, Tellus, First Earth, or "The World" to Humans, was the inhabited third planet of the Sol system. Earth was the homeworld of the Humans and the Voth, among others, and was a key planet to the United Federation of Planets and Starfleet. In 2150, with the last nation-states joining, the planet was unified under the United Earth government. It was a founding member of the Coalition of Planets in 2155, and of the United Federation of Planets in 2161.               </pre>
+                <pre id="tellar">
+                    <img src="images/members/tellar_prime.jpg" alt='tellar' style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                    Tellar Prime or Tellar was the inhabited prime planet in its star system. This was the homeworld of the Tellarites, a warp-capable humanoid species. Relative to the planetoid Babel, Tellar was located on the far side of the Andorian Empire. Good arguments were considered a sport on Tellar. In November 2154, Enterprise NX-01 visited Tellar Prime to pick up a Tellarite delegation and transport them to Babel. In 2155, representatives from Tellar took part in talks on Earth to form a Coalition of Planets. In 2161, Tellar became a founding member of the United Federation of Planets.
+                </pre>
+            </div>
+        </div>
+
+        <div class='center_right'>
+
+            <div class='center_cell'>
+                <h3 style="color:white; text-align:center;">Charter of the United<br>Federation of Planets</h3>
+                <img alt='foundation' src='images/members/foundation.jpg' style="margin-bottom:20px; border:1px solid white;">
+                <pre id='charter'>
+                    "We the lifeforms of the United Federation of Planets determined to save succeeding generations from the scourge of war, and to reaffirm faith in the fundamental rights of sentient beings, in the dignity and worth of all lifeforms, in the equal rights of members of planetary systems large and small, and to establish conditions under which justice and respect for the obligations arising from treaties and other sources of interstellar law can be maintained, and to promote social progress and better standards of living on all worlds, and for these ends, to practice toleration and live together in peace with one another, and to unite our strength to maintain interstellar peace and security, and to ensure, by the acceptance of principles and the institutions of methods, that weapons of destruction shall not be used, save in the common interest, and to employ interstellar resources for the promotion...".
+                </pre>
+            </div>
+        </div>
+
+        <script src='script_members.js'></script>
+
+        <table id="bottom">
+            <tr>
+                <td style="text-align:left; padding: 10px;font-size:small; color:#747fbf">
+                    The Federation Earthling Group <br>
+                    Legal | Access to Information | Jobs | Contact <br>
+                    © 2020 The Federation Earthling Group, All Rights Reserved.
+                </td>
+                <td><img src="images/design_logo.png" alt="The Federation Earthling Group" style='float:right; margin-right:30px; height: 8%; width: 8%;'></td>
+            </tr>
+        </table>
+    </body>
+</html>

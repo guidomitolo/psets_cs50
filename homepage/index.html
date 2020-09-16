@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>The Federation Database</title>
+        <meta charset="UTF-8">
+        <meta name="star trek" content="everything about star trek universe">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link href='styles_nav_bars.css' rel="stylesheet">
+        <style>
+            body {
+                padding: 40px;
+                background-color:#253381;
+            }
+
+            pre {
+                text-align: left;
+                white-space: pre-line;
+            }
+            div {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top:80px;
+            }
+            .icon {
+                text-align:right;
+            }
+        </style>
+    </head>
+    <body onload="greet(); return false;">
+        <h1 style='color:white'>The Federation Database<img src="images/flag_fed.png" alt="Official Insignia" style='height: 25%; width: 25%;float:right'></h1>
+        <h2 style='color:#747fbf; margin-top:30px'>Welcome to the most complete dataset of the entire Federation</h2>
+        <p style='color:#747fbf'>
+            The Federation Database provides information on the history, people and society, government,
+            economy, energy, geography, communications, transportation, military, and trans-planetary
+            issues for each of the federation galaxy's entities.
+        </p>
+        <table class="nav_bar">
+            <tr>
+                <th class='nav_cel'><a class="bar_links" href="index.html">Home</a></th>
+                <th class='nav_cel' onmouseover="show_mem(); return false;" onmouseout="hide_mem(); return false;">
+                    <a class="bar_links" id="members" href="members.html">Members</a>
+                </th>
+                <th class='nav_cel' onmouseover="show_star(); return false;" onmouseout="hide_star(); return false;">
+                    <a class="bar_links" id="starfleet" href="starfleet.html">Starfleet</a>
+                </th>
+                <th class='nav_cel'><a class="bar_links" href="under_construction.html">Reference</a></th>
+                <th class='nav_cel'><a class="bar_links" href="under_construction.html">Appendix</a></th>
+                <th class='nav_cel'><a class="bar_links" href="under_construction.html">About</a></th>
+                <th class='nav_cel'><a class="bar_links" href="under_construction.html">FAQ</a></th>
+                <th class='nav_cel'><a class="bar_links" href="under_construction.html">Contact</a></th>
+            </tr>
+        </table>
+        <table class='nav_subbar' id='nav_subbar_star' onmouseover="show_star(); return false;" onmouseout="hide_star(); return false;">
+            <tr>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Fleets</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Ranks</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Starships</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Staff</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Careers</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Headquartes</a></th>
+            </tr>
+        </table>
+        <table class='nav_subbar' id='nav_subbar_mem' onmouseover="show_mem(); return false;" onmouseout="hide_mem(); return false;">
+            <tr>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Species</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Planets</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Sectors</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Intergalactic Guilds</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Treaties</a></th>
+                <th class='nav_cel'><a class="subbar_links" href="under_construction.html">Cuadrants Relations</a></th>
+            </tr>
+        </table>
+        <div>
+            <h3 style="color:white;">The Federation</h3>
+            <!-- Text courtesy of https://memory-alpha.fandom.com/ -->
+                <pre style="color:#c4caec; float:left; text-align: justify; text-justify: inter-word;"><img src='images/headquarters_1.png' id='headquarters' alt="Foundation Event" style='margin-left:50px; height: 30%; width: 30%; float:right'>
+The Federation was founded in San Francisco, Earth in 2161. The seeds of the Federation were planted during the Babel Crisis of 2154, during which a temporary alliance was formed to search for a Romulan drone ship preying on local vessels. It was this that first brought together the species that founded the Federation: Humans, Vulcans, Andorians, and Tellarites. Sometime around January 2155, these four species as well as others, including the Denobulans, the Rigelians, and the Coridanites, began talks to create what was later considered a direct precursor to the Federation: the Coalition of Planets. The Earth-Romulan War, which broke out in 2156 and was won by an alliance of forces from Earth, Andoria, Vulcan, and Tellar in 2160, immediately preceded the foundation of the Federation, which took place the following year between dignitaries of these four planets.
+                </pre>
+
+            <h3 style="color:white; text-align:left;">Please Visit our New Starfleet Section!
+                <a href="starfleet.html"><img alt='starfleet logo' class='icon' src="images/starfleet_logo.png" style='height: 10%; width: 10%;'></a>
+            </h3>
+        </div>
+
+        <script src='script_index.js'></script>
+
+        <table id="bottom">
+            <tr>
+                <td style="text-align:left; padding: 10px;font-size:small; color:#747fbf">
+                    The Federation Earthling Group <br>
+                    Legal | Access to Information | Jobs | Contact <br>
+                    © 2020 The Federation Earthling Group, All Rights Reserved.
+                </td>
+                <td><img src="images/design_logo.png" alt="The Federation Earthling Group" style='float:right; margin-right:30px; height: 8%; width: 8%;'></td>
+            </tr>
+        </table>
+    </body>
+</html>

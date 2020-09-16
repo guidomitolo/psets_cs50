@@ -1,0 +1,60 @@
+.nav_bar {
+    border-collapse: collapse;
+    width: 100%;
+    background-color:#747fbf;
+    margin-top:30px;
+}
+.bar_links, .bar_links:visited
+{
+    color:#c4caec;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+.bar_links:hover
+{
+    color:white;
+    text-decoration: none;
+}
+.nav_subbar
+{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #7fb3d5;
+}
+#nav_subbar_star
+{
+    display:none;
+}
+#nav_subbar_mem
+{
+    display:none;
+}
+.subbar_links
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #253381;
+    font-weight:normal;
+}
+.subbar_links:hover
+{
+    text-decoration: none;
+    color:white;
+}
+.nav_cel {
+    text-align: center;
+    padding: 8px;
+}
+.nav_cel:hover {
+    background-color:#7fb3d5;
+}
+td {
+    padding: 10px;
+}
+#bottom {
+    border-top: 1px solid;
+    border-color: #747fbf;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 50px;
+}
