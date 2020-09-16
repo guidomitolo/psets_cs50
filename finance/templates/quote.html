@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block title %}
+    Quote
+{% endblock %}
+{% if get_flashed_messages() %}
+<header>
+    <div class="alert alert-primary border text-center" role="alert">
+        {{ get_flashed_messages() | join(" ") }}
+    </div>
+</header>
+{% endif %}
+{% block main %}
+    <table class="table">
+        <tbody>
+            <th style="border-color: white; vertical-align: middle;">
+                <form action="/quote" method="post">
+                    <div class="form-group">
+                        <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text" required>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Quote</button>
+                </form>
+            </th>
+            <th style="border-color: white;">
+                <a class="twitter-timeline"
+                data-lang="en"
+                data-width="340"
+                data-height="240"
+                data-chrome="noheader"
+                data-chrome="transparent"
+            
+                href="https://twitter.com/otrolumpen/lists/finance?ref_src=twsrc%5Etfw">
+                Everything about world markets</a>
+                
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </th>
+        </tbody>
+    </table>
+{% endblock %}

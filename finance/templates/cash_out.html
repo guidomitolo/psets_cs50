@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block title %}
+    Cash Out
+{% endblock %}
+{% if get_flashed_messages() %}
+<header>
+    <div class="alert alert-primary border text-center" role="alert">
+        {{ get_flashed_messages() | join(" ") }}
+    </div>
+</header>
+{% endif %}
+
+
+{% block main %}
+<div style="display: inline-block; width: 50%;">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ASSETS</th> 
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ shares }} shares</td>
+                <td>{{ total_shares }}</td>
+            </tr>
+            <tr>
+                <td>CASH</td>
+                <td>{{ total_cash }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>{{ balance }}</b></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div style="display: inline-block; width: 50%;">
+    <!-- <button class="btn btn-primary" style='margin:30px;' type="submit" name="submit_button" value="CASH OUT">CASH OUT</button> -->
+    <!-- <input type="submit" name="submit_button" value="CASH OUT"> -->
+    <form action="button">
+        <button class="btn btn-primary" style='margin:30px;' type="submit">CASH OUT</button>
+    <form>
+</div>
+
+{% endblock %}

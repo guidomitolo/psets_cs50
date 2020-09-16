@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>TOTAL</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td colspan="4"></td>
+            <td><b>{{ balance }}</b></td>
+        </tr>
+    </tfoot>
+    <tbody>
+        {% for row in rows %}
+            <tr>
+                <td>{{ row.symbol }}</td>
+                <td>{{ row.name }}</td>
+                <td>{{ row['sum(shares)'] }}</td>
+                <td>{{ row.current_price }}</td>
+                <td>{{ row.total }}</td>
+            </tr>
+        {% endfor %}
+    <tr>
+        <td colspan="4">CASH</td>
+        <td>{{ total_cash }}</td>
+    </tr>
+    </tbody>
+</table>
+
+{% if plot_bars or plot_cake %}
+<table style="border: 0px solid white; margin-top:30px; margin-bottom:30px;">
+    <thead>
+        <tr>
+            <th>Total Assets</th>
+            <th>Assets Composition</th>
+        </tr>
+    </thead>
+    <tbody style="border: 0px solid white;">
+        <tr>
+            <td>
+                <img src="data:image/png;base64, {{ plot_bars }} "/>
+            </td>
+            <td>
+                <img src="data:image/png;base64, {{ plot_cake }} "/>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endif %}
+
+{% endblock %}

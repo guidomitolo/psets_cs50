@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    User Settings
+{% endblock %}
+{% if get_flashed_messages() %}
+<header>
+    <div class="alert alert-primary border text-center" role="alert">
+        {{ get_flashed_messages() | join(" ") }}
+    </div>
+</header>
+{% endif %}
+{% block main %}
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>User Name: {{ user }}</th>
+            <th>User Email: {{ email }}</th>
+        </tr>
+    </thead>
+    <tbody class="table table-bordered">
+        <tr>
+            <td>Change Email</td>
+            <td>Change Password</td>
+        </tr>
+        <tr>
+            <td>
+                <form action="/account_email" method="post">
+                    <div class="form-group">
+                        <input autocomplete="off" autofocus class="form-control" name="email" placeholder="Email" type="text" required>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Update Email</button>
+                </form>
+            </td>
+            <td>
+                <form action="/account_pass" method="post">
+                    <div class="form-group">
+                        <input class="form-control" name="pass" placeholder="Password" type="password" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" name="confirm" placeholder="Confirmation" type="password" required>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Update Password</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Credit Cash</td>
+        </tr>
+        <tr>
+            <td>
+                <form action="/account_cash" method="post">
+                    <div class="form-group">
+                        <input autocomplete="off" autofocus class="form-control" name="cash" placeholder="Amount" type="number" required>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Transfer</button>
+                </form>
+            </td>
+            <td>
+                <p>
+                    Due to regulations, total amounts must not exceed USD 10.000 per transaction.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
