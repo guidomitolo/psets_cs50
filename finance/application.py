@@ -1,6 +1,3 @@
-# export FLASK_APP=application.py
-# export API_KEY=pk_3ef7604009d440cd96c6356eb4fd34e4
-
 import os
 
 from cs50 import SQL
