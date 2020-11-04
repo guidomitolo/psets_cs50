@@ -2,10 +2,10 @@ These are the solutions to HarvardX CS50 course problem sets, which comprehend o
 
 Some pics of a simple web pages builted with almost none CSS.
 
-https://github.com/guidomitolo/psets_cs50/blob/master/img/home.png
-https://github.com/guidomitolo/psets_cs50/blob/master/img/planets.png
-https://github.com/guidomitolo/psets_cs50/blob/master/img/captains.png
+![Image of web](https://github.com/guidomitolo/psets_cs50/blob/master/img/home.png)
+![Image of web](https://github.com/guidomitolo/psets_cs50/blob/master/img/planets.png)
+![Image of web](https://github.com/guidomitolo/psets_cs50/blob/master/img/captains.png)
 
 Finance web app index menu done with python, flask, sqlite and matplotlib. The info was provided by IEX API.
 
-https://github.com/guidomitolo/psets_cs50/blob/master/img/finance_index.png
+![Image of finance](https://github.com/guidomitolo/psets_cs50/blob/master/img/finance_index.png)
