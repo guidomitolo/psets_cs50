@@ -3,7 +3,7 @@ These are the solutions to HarvardX CS50 course problem sets, which comprehend o
 Some pics of a simple web pags built with minimal CSS and JS.
 
 
-<img src="https://github.com/guidomitolo/psets_cs50/blob/master/img/home.png" width="48">
+<img src="https://github.com/guidomitolo/psets_cs50/blob/master/img/home.png" width="80">
 
 ![Image of web](https://github.com/guidomitolo/psets_cs50/blob/master/img/home.png | width=50)
 ![Image of web](https://github.com/guidomitolo/psets_cs50/blob/master/img/planets.png | width=50)
