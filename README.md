@@ -1,3 +1,7 @@
+### CS50x
+
+Search (binary and linear) and sort (selection, bubble, insertion and merge) fundamental algorithms in C.
+
 These are the solutions to HarvardX CS50 course problem sets, which comprehend one scracth script, fifteen C and two python programs, two special projects and an open final one.
 
 Some pics of a simple web pags built with minimal CSS and JS.
